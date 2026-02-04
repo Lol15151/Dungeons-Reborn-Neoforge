@@ -38,11 +38,6 @@ public class DungeonsReborn {
         ModEntityTypes.ENTITY_TYPES.register(modEventBus);
         ModBlockEntities.BLOCK_ENTITIES.register(modEventBus);
 
-        // 👇 REGISTER CLIENT ANIMATIONS HERE
-        if (net.neoforged.fml.loading.FMLEnvironment.dist == Dist.CLIENT) {
-            ModAnimations.register(modEventBus);
-        }
-
         modEventBus.addListener(this::commonSetup);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
 
@@ -65,8 +60,7 @@ public class DungeonsReborn {
 
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            ClientEvents.register(); // NeoForge handles GeoItem automatically
-            LaunchPadEvents.register();
+            LOGGER.info("Client starting for DungeonsReborn...");
         }
     }
 }
