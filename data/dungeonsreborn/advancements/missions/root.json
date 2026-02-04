@@ -1,0 +1,16 @@
+{
+  "display": {
+    "icon": { "item": "minecraft:diamond" },
+    "title": { "text": "Missions", "color": "white" },
+    "description": { "text": "Mission tab placeholder", "color": "gray" },
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "tick": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "parent": "dungeonsreborn:missions/root",
+  "display": {
+    "icon": { "item": "minecraft:stick" },
+    "title": { "text": "Test Child", "color": "white" },
+    "description": { "text": "This is a test child to show the tab", "color": "gray" },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "tick_child": {
+      "trigger": "minecraft:tick"
+    }
+  }
+}
